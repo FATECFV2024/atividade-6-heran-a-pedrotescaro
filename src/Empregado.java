@@ -55,4 +55,13 @@ public class Empregado{
         return salario;
         
     }
+    // Método para impressão dos dados do empregado
+    public void Imprimir() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Endereço: " + endereco);
+        System.out.println("Salário: " + salario);
+        System.out.printf("IRPF: %.2f%n", calcularIrpf());
+        System.out.printf("INSS: %.2f%n", calcularInss());
+        System.out.println("\n");
+    }
 }
